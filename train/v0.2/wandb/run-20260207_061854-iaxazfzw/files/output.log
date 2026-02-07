@@ -1,0 +1,48 @@
+INFO 2026-02-07 06:18:55 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-07 06:18:55 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/iaxazfzw[0m
+INFO 2026-02-07 06:18:55 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-07 06:18:55 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-07 06:18:55 ot_train.py:258 Creating dataset
+INFO 2026-02-07 06:18:55 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-07 06:18:56 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-07 06:18:56 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v0.2
+INFO 2026-02-07 06:18:56 ot_train.py:377 cfg.steps=20000 (20K)
+INFO 2026-02-07 06:18:56 ot_train.py:378 dataset.num_frames=3406 (3K)
+INFO 2026-02-07 06:18:56 ot_train.py:379 dataset.num_episodes=10
+INFO 2026-02-07 06:18:56 ot_train.py:382 Effective batch size: 128 x 1 = 128
+INFO 2026-02-07 06:18:56 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-07 06:18:56 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-07 06:18:56 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 128
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 450, in train
+    train_tracker, output_dict = update_policy(
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 116, in update_policy
+    loss, output_dict = policy.forward(batch)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 142, in forward
+    actions_hat, (mu_hat, log_sigma_x2_hat) = self.model(batch)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 473, in forward
+    cam_features = self.backbone(img)["feature_map"]
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torchvision/models/_utils.py", line 69, in forward
+    x = module(x)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torchvision/ops/misc.py", line 62, in forward
+    return x * scale + bias
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.03 GiB. GPU 0 has a total capacity of 47.38 GiB of which 5.06 GiB is free. Process 3009162 has 42.29 GiB memory in use. Of the allocated memory 41.44 GiB is allocated by PyTorch, and 369.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

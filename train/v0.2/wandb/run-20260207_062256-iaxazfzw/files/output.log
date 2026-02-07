@@ -1,0 +1,56 @@
+INFO 2026-02-07 06:22:57 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-07 06:22:57 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/iaxazfzw[0m
+INFO 2026-02-07 06:22:57 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-07 06:22:57 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-07 06:22:57 ot_train.py:258 Creating dataset
+INFO 2026-02-07 06:22:58 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-07 06:22:58 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-07 06:22:59 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v0.2
+INFO 2026-02-07 06:22:59 ot_train.py:377 cfg.steps=20000 (20K)
+INFO 2026-02-07 06:22:59 ot_train.py:378 dataset.num_frames=3406 (3K)
+INFO 2026-02-07 06:22:59 ot_train.py:379 dataset.num_episodes=10
+INFO 2026-02-07 06:22:59 ot_train.py:382 Effective batch size: 32 x 1 = 32
+INFO 2026-02-07 06:22:59 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-07 06:22:59 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-07 06:22:59 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 32
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 450, in train
+    train_tracker, output_dict = update_policy(
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 116, in update_policy
+    loss, output_dict = policy.forward(batch)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 142, in forward
+    actions_hat, (mu_hat, log_sigma_x2_hat) = self.model(batch)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 491, in forward
+    encoder_out = self.encoder(encoder_in_tokens, pos_embed=encoder_in_pos_embed)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 527, in forward
+    x = layer(x, pos_embed=pos_embed, key_padding_mask=key_padding_mask)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 555, in forward
+    x = self.self_attn(q, k, value=x, key_padding_mask=key_padding_mask)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1373, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/functional.py", line 6373, in multi_head_attention_forward
+    attn_output_weights = torch.bmm(q_scaled, k.transpose(-2, -1))
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.24 GiB. GPU 0 has a total capacity of 47.38 GiB of which 580.50 MiB is free. Process 3013106 has 46.80 GiB memory in use. Of the allocated memory 45.91 GiB is allocated by PyTorch, and 407.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
