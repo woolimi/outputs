@@ -93,3 +93,19 @@ INFO 2026-02-07 20:25:29 ot_train.py:470 step:15K smpl:234K ep:691 epch:3.74 los
 INFO 2026-02-07 20:28:02 ot_train.py:470 step:15K smpl:237K ep:701 epch:3.79 loss:0.182 grdn:10.735 lr:1.0e-05 updt_s:0.740 data_s:0.023
 INFO 2026-02-07 20:30:35 ot_train.py:470 step:15K smpl:240K ep:710 epch:3.84 loss:0.183 grdn:10.950 lr:1.0e-05 updt_s:0.741 data_s:0.023
 INFO 2026-02-07 20:30:35 ot_train.py:490 Checkpoint policy after step 15000
+INFO 2026-02-07 20:33:10 ot_train.py:470 step:15K smpl:243K ep:720 epch:3.89 loss:0.178 grdn:11.265 lr:1.0e-05 updt_s:0.740 data_s:0.023
+INFO 2026-02-07 20:35:42 ot_train.py:470 step:15K smpl:246K ep:729 epch:3.94 loss:0.179 grdn:10.759 lr:1.0e-05 updt_s:0.738 data_s:0.023
+INFO 2026-02-07 20:38:14 ot_train.py:470 step:16K smpl:250K ep:739 epch:3.99 loss:0.177 grdn:10.850 lr:1.0e-05 updt_s:0.737 data_s:0.023
+INFO 2026-02-07 20:40:53 ot_train.py:470 step:16K smpl:253K ep:748 epch:4.04 loss:0.175 grdn:11.556 lr:1.0e-05 updt_s:0.741 data_s:0.052
+INFO 2026-02-07 20:43:25 ot_train.py:470 step:16K smpl:256K ep:758 epch:4.10 loss:0.170 grdn:11.132 lr:1.0e-05 updt_s:0.739 data_s:0.023
+INFO 2026-02-07 20:45:59 ot_train.py:470 step:16K smpl:259K ep:767 epch:4.15 loss:0.173 grdn:10.393 lr:1.0e-05 updt_s:0.743 data_s:0.023
+INFO 2026-02-07 20:48:31 ot_train.py:470 step:16K smpl:262K ep:777 epch:4.20 loss:0.176 grdn:11.090 lr:1.0e-05 updt_s:0.739 data_s:0.023
+INFO 2026-02-07 20:51:04 ot_train.py:470 step:17K smpl:266K ep:786 epch:4.25 loss:0.175 grdn:11.232 lr:1.0e-05 updt_s:0.739 data_s:0.023
+INFO 2026-02-07 20:53:36 ot_train.py:470 step:17K smpl:269K ep:796 epch:4.30 loss:0.173 grdn:10.346 lr:1.0e-05 updt_s:0.740 data_s:0.023
+INFO 2026-02-07 20:56:09 ot_train.py:470 step:17K smpl:272K ep:805 epch:4.35 loss:0.170 grdn:11.109 lr:1.0e-05 updt_s:0.739 data_s:0.024
+INFO 2026-02-07 20:58:41 ot_train.py:470 step:17K smpl:275K ep:815 epch:4.40 loss:0.170 grdn:10.750 lr:1.0e-05 updt_s:0.738 data_s:0.023
+INFO 2026-02-07 21:01:16 ot_train.py:470 step:17K smpl:278K ep:824 epch:4.45 loss:0.170 grdn:10.614 lr:1.0e-05 updt_s:0.750 data_s:0.023
+INFO 2026-02-07 21:03:49 ot_train.py:470 step:18K smpl:282K ep:834 epch:4.51 loss:0.169 grdn:10.673 lr:1.0e-05 updt_s:0.742 data_s:0.023
+INFO 2026-02-07 21:06:22 ot_train.py:470 step:18K smpl:285K ep:843 epch:4.56 loss:0.168 grdn:10.805 lr:1.0e-05 updt_s:0.740 data_s:0.023
+INFO 2026-02-07 21:08:55 ot_train.py:470 step:18K smpl:288K ep:853 epch:4.61 loss:0.168 grdn:10.352 lr:1.0e-05 updt_s:0.741 data_s:0.023
+INFO 2026-02-07 21:08:55 ot_train.py:490 Checkpoint policy after step 18000
