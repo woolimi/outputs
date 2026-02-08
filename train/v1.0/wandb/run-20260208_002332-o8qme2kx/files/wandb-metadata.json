@@ -1,0 +1,41 @@
+{
+  "os": "Linux-6.8.0-63-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.19",
+  "startedAt": "2026-02-08T00:23:32.505117Z",
+  "args": [
+    "--resume=true",
+    "--config_path=outputs/train/v1.0/checkpoints/030000/pretrained_model/train_config.json"
+  ],
+  "program": "/root/miniforge3/envs/lerobot/bin/lerobot-train",
+  "git": {
+    "remote": "git@github.com:woolimi/lerobot.git",
+    "commit": "fda69b8b12a7e9f7d0daa37eaa52a922a55e39d3"
+  },
+  "root": "outputs/train/v1.0",
+  "host": "8964545fc2e3",
+  "executable": "/root/miniforge3/envs/lerobot/bin/python3.10",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "107374182400",
+      "used": "14949265408"
+    }
+  },
+  "memory": {
+    "total": "540844331008"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "memoryTotal": "51527024640",
+      "cudaCores": 18176,
+      "architecture": "Ada",
+      "uuid": "GPU-7fa8f499-f70e-3054-1b9b-cd6cac16f892"
+    }
+  ],
+  "cudaVersion": "12.8",
+  "writerId": "ih1mhc3nd1ujj0za7tvppqz7qp7lcqyq"
+}

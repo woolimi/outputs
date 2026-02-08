@@ -1,0 +1,256 @@
+_wandb:
+    value:
+        cli_version: 0.24.2
+        e:
+            ih1mhc3nd1ujj0za7tvppqz7qp7lcqyq:
+                args:
+                    - --resume=true
+                    - --config_path=outputs/train/v1.0/checkpoints/030000/pretrained_model/train_config.json
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "107374182400"
+                        used: "14949265408"
+                executable: /root/miniforge3/envs/lerobot/bin/python3.10
+                git:
+                    commit: fda69b8b12a7e9f7d0daa37eaa52a922a55e39d3
+                    remote: git@github.com:woolimi/lerobot.git
+                gpu: NVIDIA RTX 6000 Ada Generation
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX 6000 Ada Generation
+                      uuid: GPU-7fa8f499-f70e-3054-1b9b-cd6cac16f892
+                host: 8964545fc2e3
+                memory:
+                    total: "540844331008"
+                os: Linux-6.8.0-63-generic-x86_64-with-glibc2.35
+                program: /root/miniforge3/envs/lerobot/bin/lerobot-train
+                python: CPython 3.10.19
+                root: outputs/train/v1.0
+                startedAt: "2026-02-08T00:23:32.505117Z"
+                writerId: ih1mhc3nd1ujj0za7tvppqz7qp7lcqyq
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 51
+                - 71
+                - 83
+            "2":
+                - 1
+                - 41
+                - 49
+                - 51
+                - 71
+                - 83
+            "3":
+                - 5
+                - 13
+                - 14
+                - 15
+                - 16
+                - 62
+            "4": 3.10.19
+            "5": 0.24.2
+            "10":
+                - 21
+            "12": 0.24.2
+            "13": linux-x86_64
+batch_size:
+    value: 16
+checkpoint_path:
+    value: outputs/train/v1.0/checkpoints/030000
+dataset:
+    value:
+        episodes: null
+        image_transforms:
+            enable: true
+            max_num_transforms: 3
+            random_order: false
+            tfs:
+                affine:
+                    kwargs:
+                        degrees:
+                            - -5
+                            - 5
+                        translate:
+                            - 0.05
+                            - 0.05
+                    type: RandomAffine
+                    weight: 1
+                brightness:
+                    kwargs:
+                        brightness:
+                            - 0.8
+                            - 1.2
+                    type: ColorJitter
+                    weight: 1
+                contrast:
+                    kwargs:
+                        contrast:
+                            - 0.8
+                            - 1.2
+                    type: ColorJitter
+                    weight: 1
+                hue:
+                    kwargs:
+                        hue:
+                            - -0.05
+                            - 0.05
+                    type: ColorJitter
+                    weight: 1
+                saturation:
+                    kwargs:
+                        saturation:
+                            - 0.5
+                            - 1.5
+                    type: ColorJitter
+                    weight: 1
+                sharpness:
+                    kwargs:
+                        sharpness:
+                            - 0.5
+                            - 1.5
+                    type: SharpnessJitter
+                    weight: 1
+        repo_id: woolim/case
+        revision: null
+        root: ./data/case
+        streaming: false
+        use_ibr_images: false
+        use_imagenet_stats: true
+        video_backend: torchcodec
+env:
+    value: null
+eval:
+    value:
+        batch_size: 50
+        n_episodes: 50
+        use_async_envs: false
+eval_freq:
+    value: 20000
+job_name:
+    value: act_pilot_v1.0
+log_freq:
+    value: 200
+num_workers:
+    value: 4
+optimizer:
+    value:
+        betas:
+            - 0.9
+            - 0.999
+        eps: 1e-08
+        grad_clip_norm: 10
+        lr: 1e-05
+        type: adamw
+        weight_decay: 0.0001
+output_dir:
+    value: outputs/train/v1.0
+peft:
+    value: null
+policy:
+    value:
+        chunk_size: 100
+        device: cuda
+        dim_feedforward: 3200
+        dim_model: 512
+        dropout: 0.1
+        feedforward_activation: relu
+        input_features:
+            observation.images.gripper:
+                shape:
+                    - 3
+                    - 720
+                    - 1280
+                type: VISUAL
+            observation.images.top:
+                shape:
+                    - 3
+                    - 720
+                    - 1280
+                type: VISUAL
+            observation.state:
+                shape:
+                    - 6
+                type: STATE
+        kl_weight: 10
+        latent_dim: 32
+        license: null
+        n_action_steps: 100
+        n_decoder_layers: 1
+        n_encoder_layers: 4
+        n_heads: 8
+        n_obs_steps: 1
+        n_vae_encoder_layers: 4
+        normalization_mapping:
+            ACTION: MEAN_STD
+            STATE: MEAN_STD
+            VISUAL: MEAN_STD
+        optimizer_lr: 1e-05
+        optimizer_lr_backbone: 1e-05
+        optimizer_weight_decay: 0.0001
+        output_features:
+            action:
+                shape:
+                    - 6
+                type: ACTION
+        pre_norm: false
+        pretrained_backbone_weights: ResNet18_Weights.IMAGENET1K_V1
+        pretrained_path: outputs/train/v1.0/checkpoints/030000/pretrained_model
+        private: null
+        push_to_hub: false
+        replace_final_stride_with_dilation: 0
+        repo_id: null
+        tags: null
+        temporal_ensemble_coeff: null
+        type: act
+        use_amp: false
+        use_peft: false
+        use_vae: true
+        vision_backbone: resnet18
+rabc_epsilon:
+    value: 1e-06
+rabc_head_mode:
+    value: sparse
+rabc_kappa:
+    value: 0.01
+rabc_progress_path:
+    value: null
+resume:
+    value: true
+resume_reset_steps:
+    value: false
+save_checkpoint:
+    value: true
+save_freq:
+    value: 3000
+scheduler:
+    value: null
+seed:
+    value: 1000
+steps:
+    value: 400000
+tolerance_s:
+    value: 0.0001
+use_policy_training_preset:
+    value: true
+use_rabc:
+    value: false
+wandb:
+    value:
+        disable_artifact: false
+        enable: true
+        entity: null
+        mode: null
+        notes: null
+        project: lerobot
+        run_id: o8qme2kx

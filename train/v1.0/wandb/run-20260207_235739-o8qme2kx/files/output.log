@@ -1,0 +1,40 @@
+INFO 2026-02-07 23:57:40 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-07 23:57:40 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/o8qme2kx[0m
+INFO 2026-02-07 23:57:40 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-07 23:57:40 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-07 23:57:40 ot_train.py:258 Creating dataset
+INFO 2026-02-07 23:57:41 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-07 23:57:42 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-07 23:57:42 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v1.0
+INFO 2026-02-07 23:57:42 ot_train.py:377 cfg.steps=400000 (400K)
+INFO 2026-02-07 23:57:42 ot_train.py:378 dataset.num_frames=62498 (62K)
+INFO 2026-02-07 23:57:42 ot_train.py:379 dataset.num_episodes=185
+INFO 2026-02-07 23:57:42 ot_train.py:382 Effective batch size: 16 x 1 = 16
+INFO 2026-02-07 23:57:42 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-07 23:57:42 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-07 23:57:42 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 16
+INFO 2026-02-07 23:59:41 ot_train.py:470 step:30K smpl:483K ep:1K epch:7.73 loss:0.114 grdn:8.782 lr:1.0e-05 updt_s:0.489 data_s:0.105
+INFO 2026-02-08 00:01:29 ot_train.py:470 step:30K smpl:486K ep:1K epch:7.78 loss:0.114 grdn:8.174 lr:1.0e-05 updt_s:0.483 data_s:0.057
+INFO 2026-02-08 00:03:15 ot_train.py:470 step:31K smpl:490K ep:1K epch:7.83 loss:0.116 grdn:7.834 lr:1.0e-05 updt_s:0.482 data_s:0.051
+INFO 2026-02-08 00:05:01 ot_train.py:470 step:31K smpl:493K ep:1K epch:7.89 loss:0.113 grdn:8.016 lr:1.0e-05 updt_s:0.481 data_s:0.047
+INFO 2026-02-08 00:06:45 ot_train.py:470 step:31K smpl:496K ep:1K epch:7.94 loss:0.115 grdn:7.961 lr:1.0e-05 updt_s:0.483 data_s:0.038
+INFO 2026-02-08 00:08:29 ot_train.py:470 step:31K smpl:499K ep:1K epch:7.99 loss:0.115 grdn:7.868 lr:1.0e-05 updt_s:0.482 data_s:0.035
+INFO 2026-02-08 00:10:12 ot_train.py:470 step:31K smpl:502K ep:1K epch:8.04 loss:0.115 grdn:8.901 lr:1.0e-05 updt_s:0.481 data_s:0.037
+INFO 2026-02-08 00:11:58 ot_train.py:470 step:32K smpl:506K ep:1K epch:8.09 loss:0.111 grdn:7.960 lr:1.0e-05 updt_s:0.482 data_s:0.045
+INFO 2026-02-08 00:13:41 ot_train.py:470 step:32K smpl:509K ep:2K epch:8.14 loss:0.113 grdn:7.714 lr:1.0e-05 updt_s:0.481 data_s:0.036
+INFO 2026-02-08 00:15:24 ot_train.py:470 step:32K smpl:512K ep:2K epch:8.19 loss:0.113 grdn:7.977 lr:1.0e-05 updt_s:0.481 data_s:0.031
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 450, in train
+    train_tracker, output_dict = update_policy(
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 116, in update_policy
+    loss, output_dict = policy.forward(batch)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 148, in forward
+    loss_dict = {"l1_loss": l1_loss.item()}
+KeyboardInterrupt

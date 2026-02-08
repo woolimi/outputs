@@ -1,0 +1,33 @@
+{"time":"2026-02-08T00:26:46.171734756Z","level":"INFO","msg":"stream: starting","core version":"0.24.2"}
+{"time":"2026-02-08T00:26:46.439829348Z","level":"INFO","msg":"stream: created new stream","id":"o8qme2kx"}
+{"time":"2026-02-08T00:26:46.440454352Z","level":"INFO","msg":"handler: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T00:26:46.442531453Z","level":"INFO","msg":"stream: started","id":"o8qme2kx"}
+{"time":"2026-02-08T00:26:46.442572433Z","level":"INFO","msg":"sender: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T00:26:46.442576333Z","level":"INFO","msg":"writer: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T00:28:40.540286384Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.540924217Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.54146632Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.541822272Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.542201974Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.542445135Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.542787857Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.543060289Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.54325172Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.543510361Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:28:40.543721482Z","level":"WARN","msg":"handler: ignoring partial history record","step":30200,"current":32001}
+{"time":"2026-02-08T00:30:30.239189408Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.239960602Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.240267434Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.240637796Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.240881407Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.24135074Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.241606731Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.241820812Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.242142684Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.242341485Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:30:30.242580576Z","level":"WARN","msg":"handler: ignoring partial history record","step":30400,"current":32001}
+{"time":"2026-02-08T00:31:09.901439217Z","level":"INFO","msg":"stream: closing","id":"o8qme2kx"}
+{"time":"2026-02-08T00:31:10.300441462Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-08T00:31:10.470701438Z","level":"INFO","msg":"handler: closed","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T00:31:10.474190408Z","level":"INFO","msg":"sender: closed","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T00:31:10.47456379Z","level":"INFO","msg":"stream: closed","id":"o8qme2kx"}

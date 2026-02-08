@@ -17,3 +17,5 @@ config: {'dataset': {'repo_id': 'woolim/case', 'root': './data/case', 'episodes'
 2026-02-07 17:18:47,884 INFO    MainThread:6924 [wandb_run.py:_redirect():2446] Wrapping output streams.
 2026-02-07 17:18:47,884 INFO    MainThread:6924 [wandb_run.py:_redirect():2469] Redirects installed.
 2026-02-07 17:18:47,887 INFO    MainThread:6924 [wandb_init.py:init():1082] run started, returning control to user process
+2026-02-07 23:56:22,358 INFO    wandb-AsyncioManager-main:6924 [service_client.py:_forward_responses():94] Reached EOF.
+2026-02-07 23:56:22,359 INFO    wandb-AsyncioManager-main:6924 [mailbox.py:close():154] Closing mailbox, abandoning 1 handles.

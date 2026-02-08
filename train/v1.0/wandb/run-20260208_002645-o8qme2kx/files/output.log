@@ -1,0 +1,32 @@
+INFO 2026-02-08 00:26:46 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-08 00:26:46 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/o8qme2kx[0m
+INFO 2026-02-08 00:26:46 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-08 00:26:46 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-08 00:26:46 ot_train.py:258 Creating dataset
+INFO 2026-02-08 00:26:47 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-08 00:26:48 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-08 00:26:48 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v1.0
+INFO 2026-02-08 00:26:48 ot_train.py:377 cfg.steps=400000 (400K)
+INFO 2026-02-08 00:26:48 ot_train.py:378 dataset.num_frames=62498 (62K)
+INFO 2026-02-08 00:26:48 ot_train.py:379 dataset.num_episodes=185
+INFO 2026-02-08 00:26:48 ot_train.py:382 Effective batch size: 16 x 1 = 16
+INFO 2026-02-08 00:26:48 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-08 00:26:48 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-08 00:26:48 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 16
+INFO 2026-02-08 00:28:40 ot_train.py:470 step:30K smpl:483K ep:1K epch:7.73 loss:0.114 grdn:8.788 lr:1.0e-05 updt_s:0.486 data_s:0.074
+INFO 2026-02-08 00:30:30 ot_train.py:470 step:30K smpl:486K ep:1K epch:7.78 loss:0.114 grdn:8.147 lr:1.0e-05 updt_s:0.479 data_s:0.069
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 450, in train
+    train_tracker, output_dict = update_policy(
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 116, in update_policy
+    loss, output_dict = policy.forward(batch)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 148, in forward
+    loss_dict = {"l1_loss": l1_loss.item()}
+KeyboardInterrupt

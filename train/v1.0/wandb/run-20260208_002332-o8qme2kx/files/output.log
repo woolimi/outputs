@@ -1,0 +1,42 @@
+INFO 2026-02-08 00:23:33 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-08 00:23:33 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/o8qme2kx[0m
+INFO 2026-02-08 00:23:33 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-08 00:23:33 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-08 00:23:33 ot_train.py:258 Creating dataset
+INFO 2026-02-08 00:23:34 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-08 00:23:35 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-08 00:23:36 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v1.0
+INFO 2026-02-08 00:23:36 ot_train.py:377 cfg.steps=400000 (400K)
+INFO 2026-02-08 00:23:36 ot_train.py:378 dataset.num_frames=62498 (62K)
+INFO 2026-02-08 00:23:36 ot_train.py:379 dataset.num_episodes=185
+INFO 2026-02-08 00:23:36 ot_train.py:382 Effective batch size: 16 x 1 = 16
+INFO 2026-02-08 00:23:36 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-08 00:23:36 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-08 00:23:36 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 16
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 446, in train
+    batch = next(dl_iter)
+  File "/workspace/lerobot/src/lerobot/datasets/utils.py", line 912, in cycle
+    yield next(iterator)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/accelerate/data_loader.py", line 579, in __iter__
+    next_batch = next(dataloader_iter)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 733, in __next__
+    data = self._next_data()
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _next_data
+    idx, data = self._get_data()
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1443, in _get_data
+    success, data = self._try_get_data()
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1284, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
