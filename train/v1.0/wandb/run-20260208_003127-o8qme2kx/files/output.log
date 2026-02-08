@@ -41,3 +41,6 @@ INFO 2026-02-08 01:06:14 ot_train.py:490 Checkpoint policy after step 34000
 INFO 2026-02-08 01:07:59 ot_train.py:470 step:34K smpl:547K ep:2K epch:8.76 loss:0.108 grdn:8.249 lr:1.0e-05 updt_s:0.480 data_s:0.032
 INFO 2026-02-08 01:09:42 ot_train.py:470 step:34K smpl:550K ep:2K epch:8.81 loss:0.108 grdn:7.801 lr:1.0e-05 updt_s:0.480 data_s:0.031
 INFO 2026-02-08 01:11:24 ot_train.py:470 step:35K smpl:554K ep:2K epch:8.86 loss:0.107 grdn:7.440 lr:1.0e-05 updt_s:0.479 data_s:0.031
+INFO 2026-02-08 01:13:09 ot_train.py:470 step:35K smpl:557K ep:2K epch:8.91 loss:0.109 grdn:7.760 lr:1.0e-05 updt_s:0.480 data_s:0.044
+INFO 2026-02-08 01:14:51 ot_train.py:470 step:35K smpl:560K ep:2K epch:8.96 loss:0.108 grdn:7.546 lr:1.0e-05 updt_s:0.480 data_s:0.031
+INFO 2026-02-08 01:14:51 ot_train.py:490 Checkpoint policy after step 35000
