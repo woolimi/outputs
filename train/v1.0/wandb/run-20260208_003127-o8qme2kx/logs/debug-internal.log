@@ -114,3 +114,8 @@
 {"time":"2026-02-08T00:49:01.898980227Z","level":"WARN","msg":"handler: ignoring partial history record","step":32000,"current":32001}
 {"time":"2026-02-08T00:49:01.899226409Z","level":"WARN","msg":"handler: ignoring partial history record","step":32000,"current":32001}
 {"time":"2026-02-08T00:49:01.89941847Z","level":"WARN","msg":"handler: ignoring partial history record","step":32000,"current":32001}
+{"time":"2026-02-08T01:17:07.645395336Z","level":"INFO","msg":"stream: closing","id":"o8qme2kx"}
+{"time":"2026-02-08T01:17:07.972021841Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-08T01:17:08.124498111Z","level":"INFO","msg":"handler: closed","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T01:17:08.127715977Z","level":"INFO","msg":"sender: closed","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T01:17:08.12825686Z","level":"INFO","msg":"stream: closed","id":"o8qme2kx"}

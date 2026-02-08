@@ -1,0 +1,17 @@
+{"time":"2026-02-08T01:52:46.761863641Z","level":"INFO","msg":"stream: starting","core version":"0.24.2"}
+{"time":"2026-02-08T01:52:47.033151632Z","level":"INFO","msg":"stream: created new stream","id":"o8qme2kx"}
+{"time":"2026-02-08T01:52:47.033622065Z","level":"INFO","msg":"handler: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T01:52:47.034830541Z","level":"INFO","msg":"stream: started","id":"o8qme2kx"}
+{"time":"2026-02-08T01:52:47.034872691Z","level":"INFO","msg":"writer: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T01:52:47.034911532Z","level":"INFO","msg":"sender: started","stream_id":"o8qme2kx"}
+{"time":"2026-02-08T01:54:51.572052558Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.577129176Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.578801445Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.579117337Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.579327348Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.579542139Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.581184958Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.58160855Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.583253969Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.58352673Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}
+{"time":"2026-02-08T01:54:51.583696041Z","level":"WARN","msg":"handler: ignoring partial history record","step":35200,"current":35201}

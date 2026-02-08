@@ -44,3 +44,26 @@ INFO 2026-02-08 01:11:24 ot_train.py:470 step:35K smpl:554K ep:2K epch:8.86 loss
 INFO 2026-02-08 01:13:09 ot_train.py:470 step:35K smpl:557K ep:2K epch:8.91 loss:0.109 grdn:7.760 lr:1.0e-05 updt_s:0.480 data_s:0.044
 INFO 2026-02-08 01:14:51 ot_train.py:470 step:35K smpl:560K ep:2K epch:8.96 loss:0.108 grdn:7.546 lr:1.0e-05 updt_s:0.480 data_s:0.031
 INFO 2026-02-08 01:14:51 ot_train.py:490 Checkpoint policy after step 35000
+INFO 2026-02-08 01:16:35 ot_train.py:470 step:35K smpl:563K ep:2K epch:9.01 loss:0.108 grdn:7.673 lr:1.0e-05 updt_s:0.481 data_s:0.025
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 579, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 450, in train
+    train_tracker, output_dict = update_policy(
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 116, in update_policy
+    loss, output_dict = policy.forward(batch)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 142, in forward
+    actions_hat, (mu_hat, log_sigma_x2_hat) = self.model(batch)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/lerobot/src/lerobot/policies/act/modeling_act.py", line 484, in forward
+    encoder_in_pos_embed.extend(list(cam_pos_embed))
+  File "/root/miniforge3/envs/lerobot/lib/python3.10/site-packages/torch/_tensor.py", line 1195, in __iter__
+    return iter(self.unbind(0))
+KeyboardInterrupt

@@ -1,0 +1,22 @@
+INFO 2026-02-08 01:52:47 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2026-02-08 01:52:47 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/woolimi-ecole42/lerobot/runs/o8qme2kx[0m
+INFO 2026-02-08 01:52:47 ot_train.py:217 Device selection: accelerator.device=cuda | cfg.policy.device=cuda | CUDA_VISIBLE_DEVICES=None
+INFO 2026-02-08 01:52:47 ot_train.py:232 Torch backends: torch=2.7.1+cu126 | cuda_available=True (build=12.6, count=1, gpu0=NVIDIA RTX 6000 Ada Generation) | mps_available=False | xpu_available=False
+INFO 2026-02-08 01:52:47 ot_train.py:258 Creating dataset
+INFO 2026-02-08 01:52:48 ot_train.py:278 Creating policy
+Loading weights from local directory
+INFO 2026-02-08 01:52:49 ot_train.py:333 Creating optimizer and scheduler
+INFO 2026-02-08 01:52:50 ot_train.py:370 [1m[33mOutput dir:[0m outputs/train/v1.0
+INFO 2026-02-08 01:52:50 ot_train.py:377 cfg.steps=400000 (400K)
+INFO 2026-02-08 01:52:50 ot_train.py:378 dataset.num_frames=62498 (62K)
+INFO 2026-02-08 01:52:50 ot_train.py:379 dataset.num_episodes=185
+INFO 2026-02-08 01:52:50 ot_train.py:382 Effective batch size: 16 x 1 = 16
+INFO 2026-02-08 01:52:50 ot_train.py:383 num_learnable_params=51597190 (52M)
+INFO 2026-02-08 01:52:50 ot_train.py:384 num_total_params=51597190 (52M)
+INFO 2026-02-08 01:52:50 ot_train.py:440 Start offline training on a fixed dataset, with effective batch size: 16
+INFO 2026-02-08 01:54:51 ot_train.py:470 step:35K smpl:563K ep:2K epch:9.01 loss:0.107 grdn:7.328 lr:1.0e-05 updt_s:0.488 data_s:0.116
+INFO 2026-02-08 01:56:49 ot_train.py:470 step:35K smpl:566K ep:2K epch:9.06 loss:0.105 grdn:7.442 lr:1.0e-05 updt_s:0.479 data_s:0.110
+INFO 2026-02-08 01:58:49 ot_train.py:470 step:36K smpl:570K ep:2K epch:9.11 loss:0.107 grdn:7.788 lr:1.0e-05 updt_s:0.479 data_s:0.123
+INFO 2026-02-08 02:00:49 ot_train.py:470 step:36K smpl:573K ep:2K epch:9.17 loss:0.104 grdn:8.263 lr:1.0e-05 updt_s:0.478 data_s:0.119
+INFO 2026-02-08 02:02:49 ot_train.py:470 step:36K smpl:576K ep:2K epch:9.22 loss:0.107 grdn:7.882 lr:1.0e-05 updt_s:0.478 data_s:0.124
+INFO 2026-02-08 02:02:49 ot_train.py:490 Checkpoint policy after step 36000
